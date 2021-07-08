@@ -4,7 +4,7 @@
   background-color: #ffffff;
   border: 1px solid #e1e1e1;
   margin-bottom: 2rem;
-
+  
   .photo {
     position: relative;
     padding: 80% 10px 0 10px;
@@ -40,13 +40,14 @@
     .buttons {
       display: flex;
       justify-content: space-between;
+      opacity: 0;
     }
   }
 
   .content {
     text-align: center;
     padding: 20px;
-
+    
     h5 {
       color: $primary;
       font-size: 16px;
@@ -83,5 +84,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  &:hover{
+    .buttons{
+      opacity: 1;
+    }
+
+    .price :first-child{
+      background-color: #d58e32;
+     } 
   }
 }
