@@ -28,6 +28,12 @@ const CompanyClaim = () => (
             </div>
             <div className={styles.cartCounter}>0</div>
           </a>
+          <div className={styles.phoneNumber}>
+            <p>
+              <FontAwesomeIcon className={styles.icon} icon={faMobileAlt} /> 2300 - 3560
+              - 222
+            </p>
+          </div>
         </div>
       </div>
     </div>
