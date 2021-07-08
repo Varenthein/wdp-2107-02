@@ -24,6 +24,9 @@
       right: 10px;
       z-index: 0;
     }
+      &:hover {
+      color: $primary;
+    }
 
     select {
       -webkit-appearance: none;
@@ -32,8 +35,15 @@
       padding: 5px 30px 5px 35px;
       position: relative;
       z-index: 1;
+      font-size: 14px;
+      outline: none;
+      cursor: pointer;
+    }
+    select:hover{
+      color: $primary;
     }
   }
+  
 
   .searchField {
     display: flex;
