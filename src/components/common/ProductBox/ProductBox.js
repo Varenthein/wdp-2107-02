@@ -8,10 +8,19 @@ import { faHeart } from '@fortawesome/free-regular-svg-icons';
 import Button from '../Button/Button';
 import StarRating from '../StarRating/StarRating';
 
-const ProductBox = ({ id, name, price, promo, stars, favorite, changeFavorite, oldPrice, image, myRating, addRating, toFavorite, toCompare  }) => {
+const ProductBox = ({ id, name, price, promo, stars, favorite, changeFavorite, oldPrice, image, myRating, addRating, toFavorite, toCompare, compareCount, setCompare  }) => {
   const handleFavorite = event => {
     event.preventDefault();
     changeFavorite(id);
+  };
+  const toCompareHandler = event => {
+    event.preventDefault();
+    const maxToCompare = 4;
+    if (compareCount < maxToCompare) {
+      setCompare({ id, image });
+    } else {
+      alert('You can compare maximum of 4 products!');
+    }
   };
 
   return (
@@ -29,7 +38,7 @@ const ProductBox = ({ id, name, price, promo, stars, favorite, changeFavorite, o
       <div className={styles.content}>
         <h5>{name}</h5>
         <div className={styles.stars}>
-           <StarRating myRating={myRating} stars={stars} addRating={addRating} id={id} />
+          <StarRating myRating={myRating} stars={stars} addRating={addRating} id={id} />
         </div>
       </div>
       <div className={styles.line}></div>
@@ -40,9 +49,9 @@ const ProductBox = ({ id, name, price, promo, stars, favorite, changeFavorite, o
             className={favorite ? 'active' : ''}
             onClick={e => handleFavorite(e, id)}
           >
-             <FontAwesomeIcon icon={faHeart} toFavorite={toFavorite}>Favorite</FontAwesomeIcon>
+            <FontAwesomeIcon icon={faHeart} toFavorite={toFavorite}>Favorite</FontAwesomeIcon>
           </Button>
-          <Button variant='outline'>
+          <Button variant='outline' onClick={toCompareHandler}>
             <FontAwesomeIcon icon={faExchangeAlt} toCompare={toCompare}>Add to compare</FontAwesomeIcon>
           </Button>
         </div>
@@ -51,6 +60,7 @@ const ProductBox = ({ id, name, price, promo, stars, favorite, changeFavorite, o
           <Button noHover variant='small'>
             $ {price}
           </Button>
+        </div>
       </div>
     </div>
   );
@@ -72,6 +82,8 @@ ProductBox.propTypes = {
   addRating: PropTypes.func,
   toCompare: PropTypes.bool,
   toFavorite: PropTypes.bool,
+  setCompare: PropTypes.func.isRequired,
+  compareCount: PropTypes.number.isRequired,
 };
 
 export default ProductBox;
