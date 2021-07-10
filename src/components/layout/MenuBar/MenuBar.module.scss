@@ -11,16 +11,19 @@
   .menu {
     display: flex;
     align-self: stretch;
+    margin: 10px 0px;
 
     ul {
       margin: 0;
       padding: 0;
       display: flex;
+      justify-content: space-between;
 
       li {
         list-style: none;
         display: flex;
         align-items: stretch;
+        width: auto;
       }
     }
 
@@ -35,12 +38,14 @@
       border-top: 4px solid #ffffff;
       font-weight: 500;
       letter-spacing: 1px;
+      justify-content: center;
 
       &:hover,
       &.active {
         background-color: $primary;
         color: #ffffff;
         border-color: $primary;
+        width: 100%;;
       }
 
       &.active {
@@ -49,3 +54,76 @@
     }
   }
 }
+.productSearch {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px 0;
+}
+.hamburger {
+  position: absolute;
+  display: none;
+}
+
+.hamburger_label {
+  display: none;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+
+  .menu {
+    align-self: stretch;
+    margin: 10px -15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .root {
+    .productSearch {
+      width: 80%;
+      order: 0;
+          }
+          .hamburger_label {
+            display: flex;
+            width: 20%;
+          }
+      
+          .icon {
+            display: block;
+          }
+      
+          .hamburger:checked ~ .menu {
+            visibility: visible;
+            height: 100%;
+          }
+
+          .menu {
+            order: 1;
+            visibility: collapse;
+            height: 0;
+            overflow-y: auto;
+            ul {
+              flex-wrap: wrap;
+              border: 1px solid $form-border-color;
+      
+              li {
+                flex: 100%;
+                width: 100%;
+                justify-content: center;
+                border-bottom: 1px solid $form-border-color;
+              }
+      
+              li:last-child {
+                border-bottom: 0;
+              }
+            }
+          }
+        }
+      }
