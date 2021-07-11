@@ -81,6 +81,28 @@
     align-items: center;
   }
 
+  .price {
+    display: flex;
+    align-items: center;
+  }
+
+  .oldPrice {
+    font-weight: 300;
+    color: $gray-text-color;
+    position: relative;
+    margin-right: 10px;
+    font-size: 13px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 1px;
+      width: 100%;
+      background-color: $text-color;
+      top:45%;
+    }
+
   &:hover{
     .buttons{
       opacity: 1;
