@@ -8,7 +8,7 @@ import { faHeart } from '@fortawesome/free-regular-svg-icons';
 import Button from '../Button/Button';
 import StarRating from '../StarRating/StarRating';
 
-const ProductBox = ({ name, price, promo, stars, image, myRating, addRating, id, oldPrice }) => (
+const ProductBox = ({ name, price, promo, stars, oldPrice, image, myRating, addRating, id }) => (
   <div className={styles.root}>
     <div className={styles.photo}>
       <img src={image} alt={'furniture'} className={styles.image} />
