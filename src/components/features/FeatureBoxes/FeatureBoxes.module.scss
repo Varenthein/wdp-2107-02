@@ -4,6 +4,9 @@
   padding: 5rem 0;
 }
 
+.links{
+  @extend .hover_anim_text;
+}
 .links:hover {
   text-decoration: none;
   h5, p{
@@ -21,5 +24,4 @@
     color: $primary;
   }
 }
-
 
