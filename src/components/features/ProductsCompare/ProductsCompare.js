@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Button from '../../common/Button/Button';
 
 const ProductsCompare = ({ compare, removeCompare }) => {
-  const products = compare && compare.products;
+  const products = compare.products;
 
   if (products && products.length > 0) {
     return (

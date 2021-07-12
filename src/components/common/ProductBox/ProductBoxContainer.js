@@ -1,14 +1,15 @@
 import { connect } from 'react-redux';
 import ProductBox from './ProductBox';
-import { setCompare, getCount } from '../../../redux/compareRedux';
+import { setCompare, getCount, getCompareState, setCompareState } from '../../../redux/compareRedux';
 
 const mapStateToProps = state => ({
-  count: getCount(state),
-  compare: state.compare,
+  compareCount: getCount(state),
+  compare: getCompareState(state),
 });
 
 const mapDispatchToProps = dispatch => ({
   setCompare: value => dispatch(setCompare(value)),
+  setCompareState: value => dispatch(setCompareState(value)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProductBox);
