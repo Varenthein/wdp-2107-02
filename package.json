@@ -71,5 +71,13 @@
     "onchange": "^6.1.0",
     "prettier": "^1.19.1",
     "redux-devtools-extension": "^2.13.8"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!@shotgunjed)/"
+    ]
   }
 }
