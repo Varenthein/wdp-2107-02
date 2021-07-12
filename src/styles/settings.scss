@@ -13,3 +13,18 @@ $text-color: #2a2a2a;
 $form-border-color: #292929;
 
 $gray-text-color: #9c9c9c;
+
+// TRANSITIONS //
+
+$transition-button-bg: all 250ms;
+$transition-button-text: all 250ms;
+
+// ANIMATIONS //
+
+.hover_anim_bg {
+  transition: $transition-button-bg;
+}
+
+.hover_anim_text {
+  transition: $transition-button-text;
+}
