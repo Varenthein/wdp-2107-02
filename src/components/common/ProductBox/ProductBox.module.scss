@@ -41,6 +41,8 @@
       display: flex;
       justify-content: space-between;
       opacity: 0;
+      z-index: 100;
+      position: relative;
     }
   }
 
@@ -53,13 +55,6 @@
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 1px;
-    }
-
-    .stars {
-      a {
-        text-decoration: none;
-        color: rgb(42, 42, 42);
-      }
     }
   }
 
@@ -86,6 +81,28 @@
     align-items: center;
   }
 
+  .price {
+    display: flex;
+    align-items: center;
+  }
+
+  .oldPrice {
+    font-weight: 300;
+    color: $gray-text-color;
+    position: relative;
+    margin-right: 10px;
+    font-size: 13px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 1px;
+      width: 100%;
+      background-color: $text-color;
+      top:45%;
+    }
+
   &:hover{
     .buttons{
       opacity: 1;
@@ -95,4 +112,5 @@
       background-color: #d58e32;
      } 
   }
+}
 }

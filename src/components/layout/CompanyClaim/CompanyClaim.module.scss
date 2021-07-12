@@ -26,6 +26,9 @@
   }
 
   .cart {
+    .phoneNumber {
+      display: none;
+    }
     .cartBox {
       display: inline-block;
       position: relative;
@@ -59,13 +62,39 @@
         position: absolute;
         top: 50%;
         right: 0;
-        transform: translate(50%, -50%);
         padding-left: 10px;
+        transform: translate(50%, -50%);
+        @extend .hover_anim_bg;
       }
 
       &:hover {
         .cartIcon {
           background-color: lighten($primary, 10%);
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .root {
+    .phoneNumber {
+      display: none;
+    }
+
+    .cart {
+      .cartBox {
+        transform: translate(0, -30%);
+      }
+
+      .phoneNumber {
+        position: absolute;
+        display: flex;
+        text-align: right;
+        align-items: right;
+        right: 0;
+        margin-right: 15px;
+        p {
+          font-size: 14px;
         }
       }
     }

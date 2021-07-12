@@ -5,15 +5,32 @@ export const getCount = ({ products }) => products.length;
 export const getNew = ({ products }) =>
   products.filter(item => item.newFurniture === true);
 
+
+/* functions */
+
+const addMyRating = (state, action) => {
+  return state.map(currentStateElement => {
+    if (currentStateElement.id !== action.payload.id) {
+      return currentStateElement;
+    }
+    return {
+      ...currentStateElement,
+      myRating: action.payload.myRating,
+    };
+  });
+};
+
 /* action name creator */
 const reducerName = 'products';
 const createActionName = name => `app/${reducerName}/${name}`;
 
 /* action types */
 const SET_FAV = createActionName('SET_FAV');
+const ADD_RATING = createActionName('ADD_RATING');
 
 /* action creators */
 export const setFavorite = payload => ({ payload, type: SET_FAV });
+export const addRating = payload => ({ payload, type: ADD_RATING });
 
 /* reducer */
 export default function reducer(statePart = [], action = []) {
@@ -27,7 +44,9 @@ export default function reducer(statePart = [], action = []) {
       });
       return [...statePart, products];
     }
-
+    case ADD_RATING: {
+      return addMyRating(statePart, action);
+    }
     default:
       return statePart;
   }

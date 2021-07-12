@@ -15,6 +15,7 @@
       a {
         color: #ffffff;
         font-size: 13px;
+        @extend .hover_anim_text;
 
         &:hover {
           color: $primary;
@@ -37,6 +38,19 @@
 
     .icon {
       margin-right: 5px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .topMenu ul li a {
+    visibility: hidden;
+    font-size: 0px;
+    
+
+    .icon {
+      visibility: visible;
+      font-size: 13px;
     }
   }
 }
