@@ -35,6 +35,21 @@
   line-height: 22px;
 
   &:not(.noHover):hover {
+    background-color: $primary;
+    color: #ffffff;
+    border-color: $primary;
     @extend .hover_anim_text;
   }
 }
+.toFavorite {
+  background-color: $primary;
+  color: #ffffff;
+  border-color: $primary;
+}
+.toCompare{
+  background-color: $primary;
+  color: #ffffff;
+  border-color: $primary;
+}
+
+
