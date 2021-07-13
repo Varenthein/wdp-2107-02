@@ -52,7 +52,9 @@ const ProductBox = ({ id, name, price, promo, stars, favorite, changeFavorite, o
             <FontAwesomeIcon icon={faHeart} toFavorite={toFavorite}>Favorite</FontAwesomeIcon>
           </Button>
           <Button variant='outline' onClick={toCompareHandler}>
-            <FontAwesomeIcon icon={faExchangeAlt} toCompare={toCompare}>Add to compare</FontAwesomeIcon>
+            <FontAwesomeIcon icon={faExchangeAlt} toCompare={toCompare}>
+              Add to compare
+            </FontAwesomeIcon>
           </Button>
         </div>
         <div className={styles.price}>
@@ -65,7 +67,6 @@ const ProductBox = ({ id, name, price, promo, stars, favorite, changeFavorite, o
     </div>
   );
 };
-
 
 ProductBox.propTypes = {
   children: PropTypes.node,
