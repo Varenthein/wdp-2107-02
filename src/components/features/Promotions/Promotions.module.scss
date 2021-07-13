@@ -1,0 +1,105 @@
+@import "./../../../styles//settings.scss";
+
+.root {
+  margin-bottom: 30px;
+}
+
+.promoLeft,
+.promoRight {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-transform: uppercase;
+}
+
+.promoLeft {
+  height: 400px;
+  margin: 15px 0;
+  color: $promotions-color-light;
+  padding: 40px;
+
+  .promoLeftContent {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    background-color: rgba($promotions-color-dark, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .title {
+      font-size: 30px;
+      margin-bottom: 0;
+      font-weight: 500;
+    }
+
+    .strong {
+      font-size: 50px;
+    }
+
+    .price {
+      font-size: 26px;
+      border: 3px solid $promotions-color-light;
+      margin-right: auto;
+      margin-bottom: 0;
+      padding: 10px 20px;
+      font-weight: bold;
+    }
+  }
+}
+
+.promoRight {
+  height: 185px;
+  margin: 15px 0;
+}
+
+.promoRightTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .promoRightContent {
+
+    .title {
+      font-size: 30px;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+
+    .subtitle {
+      font-size: 25px;
+      font-weight: 500;
+      letter-spacing: 3px;
+      margin-bottom: 0;
+    }
+
+    .price {
+      color: $promotions-color-main;
+      font-weight: bold;
+      font-size: 26px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.promoRightBottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 15px;
+
+  .title {
+    font-size: 30px;
+    color: $promotions-color-main;
+    font-weight: 500;
+  }
+
+  .price {
+    font-size: 26px;
+  }
+}
+
+.strong {
+  font-weight: bold;
+}
