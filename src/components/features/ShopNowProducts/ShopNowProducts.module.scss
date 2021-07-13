@@ -134,3 +134,14 @@
     }
   }
 }
+@media (max-width: 992px) {
+  .root {
+    :global(.col-4) > * {
+      display: none;
+    }
+  .secondWindow{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }  
+  }
+}
