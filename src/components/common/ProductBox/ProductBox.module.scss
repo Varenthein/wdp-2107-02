@@ -1,15 +1,15 @@
 @import "../../../styles/settings.scss";
 
 .root {
-  background-color: #ffffff;
-  border: 1px solid #e1e1e1;
+  background-color: $productbox-bcg;
+  border: 1px solid $productbox-bcg-border;
   margin-bottom: 2rem;
   
   .photo {
     position: relative;
     padding: 80% 10px 0 10px;
     background: {
-      color: #f4f5f7;
+      color: $productbox-photo-bcg;
       size: contain;
       position: center;
       repeat: no-repeat;
@@ -31,9 +31,9 @@
       top: -30px;
       left: 50%;
       transform: translateX(-50%);
-      background-color: #292929;
+      background-color: $productbox-sale-bcg;
       border-radius: 50%;
-      color: #ffffff;
+      color: $productbox-sale-text;
       padding: 30px 15px 5px 15px;
     }
 
@@ -51,7 +51,7 @@
     padding: 20px;
     
     h5 {
-      color: $primary;
+      color: $productbox-content-text;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 1px;
@@ -60,7 +60,7 @@
 
   .line {
     margin: 0 10px;
-    border-bottom: 1px solid #2a2a2a;
+    border-bottom: 1px solid $productbox-line-border;
     position: relative;
 
     &::before {
@@ -69,7 +69,7 @@
       bottom: -1px;
       left: 50%;
       width: 30px;
-      border-bottom: 4px solid $primary;
+      border-bottom: 4px solid $productbox-line-border-before;
       transform: translateX(-50%);
     }
   }
@@ -88,7 +88,7 @@
 
   .oldPrice {
     font-weight: 300;
-    color: $gray-text-color;
+    color: $productbox-old-price-text;
     position: relative;
     margin-right: 10px;
     font-size: 13px;
@@ -99,7 +99,7 @@
       display: block;
       height: 1px;
       width: 100%;
-      background-color: $text-color;
+      background-color: $productbox-old-price-bcg;
       top:45%;
     }
 
@@ -109,7 +109,7 @@
     }
 
     .price :first-child{
-      background-color: #d58e32;
+      background-color: $productbox-price-hover-bcg;
      } 
   }
 }
