@@ -11,19 +11,32 @@ class NewFurniture extends React.Component {
   state = {
     activePage: 0,
     activeCategory: 'bed',
+    isFading: false,
   };
 
   handlePageChange(newPage) {
-    this.setState({ activePage: newPage });
+    this.setState({ isFading: true });
+    setTimeout(() => {
+      this.setState({ activePage: newPage });
+    }, 500);
+    setTimeout(() => {
+      this.setState({ isFading: false });
+    }, 500);
   }
 
   handleCategoryChange(newCategory) {
-    this.setState({ activeCategory: newCategory });
+    this.setState({ isFading: true });
+    setTimeout(() => {
+      this.setState({ activeCategory: newCategory });
+    }, 500);
+    setTimeout(() => {
+      this.setState({ isFading: false });
+    }, 500);
   }
 
   render() {
     const { categories, products, addRating } = this.props;
-    const { activeCategory, activePage } = this.state;
+    const { activeCategory, activePage, isFading } = this.state;
 
     const categoryProducts = products.filter(item => item.category === activeCategory);
     const pagesCount = Math.ceil(categoryProducts.length / 8);
@@ -74,13 +87,14 @@ class NewFurniture extends React.Component {
                 </div>
               </div>
             </div>
-            <div className='row'>
-              {categoryProducts.slice(activePage * 8, (activePage + 1) * 8).map(item => (
-                <div key={item.id} className='col-3'>
-                  <ProductBox {...item} changeFavorite={this.props.setFav} />
-                </div>
-              ))}
-            </div>
+          <div
+            className={'row' + (isFading ? ' ' + styles.fadeout : ' ' + styles.fadein)}
+          >
+            {categoryProducts.slice(activePage * 8, (activePage + 1) * 8).map(item => (
+              <div key={item.id} className='col-3'>
+                <ProductBox {...item} addRating={addRating} changeFavorite={this.props.setFav}/>
+              </div>
+            ))}
           </div>
         </div>
         <ProductsCompare />
