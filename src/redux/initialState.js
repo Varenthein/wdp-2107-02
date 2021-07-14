@@ -340,6 +340,38 @@ const initialState = {
   compare: {
     products: [],
   },
+  promotedProducts: {
+    hotDeals: {
+      title: 'HOT DEALS',
+      id: 'aenean-ru-bristique-4',
+      name: 'Aenean Ru Bristique 4',
+      category: 'bed',
+      price: 30,
+      oldPrice: '$40',
+      stars: 2,
+      promo: 'sale',
+      image:
+        'https://images.pexels.com/photos/6969780/pexels-photo-6969780.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      newFurniture: true,
+      heart: true,
+      addCompare: true,
+    },
+    shopNow: {
+      title: 'indoor',
+      spanTitle: 'furniture',
+      subtitle: 'save up to 50% of all furniture',
+      button: 'shop now',
+      image:
+        'https://images.pexels.com/photos/4993094/pexels-photo-4993094.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      imageAlt: 'bed',
+      image2:
+        'https://images.pexels.com/photos/2986011/pexels-photo-2986011.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      imageAlt2: 'sofa',
+      image3:
+        'https://images.pexels.com/photos/2082090/pexels-photo-2082090.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      imageAlt3: 'chair',
+    },
+  },
 };
 
 export default initialState;
