@@ -1,0 +1,99 @@
+@import "../../../styles/settings.scss";
+
+.container {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 100000;
+  width: 100%;
+ 
+  animation: containerAnim 1s cubic-bezier(0.87, 0, 0.25, 1) forwards;
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+    color: $primary;
+    border-bottom: 1px solid $primary;
+}
+}
+
+.button {
+  background-color: $primary;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  
+}
+.button:hover{
+  text-decoration: none;
+}
+
+.comparision {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comp {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  animation: thumbAnim 0.5s ease-in-out forwards;
+  width: 10%;
+  height: 100%;
+  margin: 10px;
+
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+
+  svg {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover {
+    svg {
+      opacity: 1;
+    }
+  }
+}
+
+
+.close {
+  position: relative;
+  display: flex;
+  right:20px;
+  top: 5px;
+}
+
+@keyframes thumbAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes containerAnim {
+  from {
+    height: 0;
+    background: rgba(255, 255, 255, 0.3);
+  }
+  to {
+    height: 350px;
+    background: $header-topbar-bg;
+  }
+}

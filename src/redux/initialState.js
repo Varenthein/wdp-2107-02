@@ -75,6 +75,33 @@ const initialState = {
     {
       id: 18,
       src: 'https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484_1280.jpg',
+  comments: [
+    {
+      id: 1,
+      text:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      profilePic:
+        'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+      name: 'Jan Kowalski',
+      client: 'Feuture client',
+    },
+    {
+      id: 2,
+      text:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      profilePic:
+        'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+      name: 'Anna Kowalska',
+      client: 'Feuture client',
+    },
+    {
+      id: 3,
+      text:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      profilePic:
+        'https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+      name: 'Jhon Smith',
+      client: 'Feuture client',
     },
   ],
   categories: [
@@ -96,6 +123,7 @@ const initialState = {
       stars: 2,
       promo: 'sale',
       newFurniture: true,
+      favorite: true,
       toFavorite: true,
       toCompare: true,
     },
@@ -110,6 +138,7 @@ const initialState = {
       myRating: null,
       promo: 'sale',
       newFurniture: true,
+      favorite: false,
       toFavorite: true,
       toCompare: false,
     },
@@ -123,6 +152,7 @@ const initialState = {
       stars: 2,
       promo: 'sale',
       newFurniture: true,
+      favorite: false,
       toFavorite: false,
       toCompare: true,
     },
@@ -136,6 +166,7 @@ const initialState = {
       stars: 2,
       promo: 'sale',
       newFurniture: true,
+      favorite: false,
       toFavorite: false,
       toCompare: false,
     },
@@ -149,6 +180,7 @@ const initialState = {
       stars: 2,
       promo: 'sale',
       newFurniture: true,
+      favorite: false,
     },
     {
       id: 'aenean-ru-bristique-6',
@@ -160,6 +192,7 @@ const initialState = {
       stars: 2,
       promo: 'sale',
       newFurniture: true,
+      favorite: false,
     },
     {
       id: 'aenean-ru-bristique-7',
@@ -171,6 +204,7 @@ const initialState = {
       stars: 2,
       promo: 'sale',
       newFurniture: true,
+      favorite: false,
     },
     {
       id: 'aenean-ru-bristique-8',
@@ -182,6 +216,7 @@ const initialState = {
       stars: 2,
       promo: 'sale',
       newFurniture: true,
+      favorite: false,
     },
     {
       id: 'aenean-ru-bristique-9',
@@ -193,6 +228,7 @@ const initialState = {
       stars: 2,
       promo: 'sale',
       newFurniture: true,
+      favorite: false,
     },
     {
       id: 'aenean-ru-bristique-10',
@@ -203,6 +239,7 @@ const initialState = {
       stars: 2,
       promo: 'sale',
       newFurniture: true,
+      favorite: false,
     },
     {
       id: 'aenean-ru-bristique-11',
@@ -214,6 +251,7 @@ const initialState = {
       stars: 2,
       promo: 'sale',
       newFurniture: true,
+      favorite: false,
     },
     {
       id: 'aenean-ru-bristique-12',
@@ -225,6 +263,7 @@ const initialState = {
       stars: 2,
       promo: 'sale',
       newFurniture: true,
+      favorite: false,
     },
     {
       id: 'aenean-ru-bristique-13',
@@ -236,6 +275,7 @@ const initialState = {
       stars: 2,
       promo: 'sale',
       newFurniture: true,
+      favorite: false,
     },
     {
       id: 'aenean-ru-bristique-14',
@@ -247,6 +287,7 @@ const initialState = {
       stars: 2,
       promo: 'sale',
       newFurniture: true,
+      favorite: false,
     },
     {
       id: 'aenean-ru-bristique-15',
@@ -258,6 +299,7 @@ const initialState = {
       stars: 2,
       promo: 'sale',
       newFurniture: true,
+      favorite: false,
     },
     {
       id: 'aenean-ru-bristique-16',
@@ -269,6 +311,7 @@ const initialState = {
       stars: 2,
       promo: 'sale',
       newFurniture: true,
+      favorite: false,
     },
     {
       id: 'aenean-ru-bristique-17',
@@ -280,6 +323,7 @@ const initialState = {
       stars: 2,
       promo: 'sale',
       newFurniture: true,
+      favorite: false,
     },
     {
       id: 'aenean-ru-bristique-18',
@@ -291,6 +335,7 @@ const initialState = {
       stars: 2,
       promo: 'sale',
       newFurniture: true,
+      favorite: false,
     },
     {
       id: 'aenean-ru-bristique-19',
@@ -302,6 +347,7 @@ const initialState = {
       stars: 2,
       promo: 'sale',
       newFurniture: true,
+      favorite: false,
     },
     {
       id: 'aenean-ru-bristique-20',
@@ -313,6 +359,7 @@ const initialState = {
       stars: 2,
       promo: 'sale',
       newFurniture: true,
+      favorite: false,
     },
     {
       id: 'aenean-ru-bristique-21',
@@ -324,6 +371,7 @@ const initialState = {
       stars: 2,
       promo: 'sale',
       newFurniture: true,
+      favorite: false,
     },
     {
       id: 'aenean-ru-bristique-22',
@@ -335,6 +383,7 @@ const initialState = {
       stars: 2,
       promo: 'sale',
       newFurniture: true,
+      favorite: false,
     },
     {
       id: 'aenean-ru-bristique-23',
@@ -346,6 +395,7 @@ const initialState = {
       stars: 2,
       promo: 'sale',
       newFurniture: true,
+      favorite: false,
     },
     {
       id: 'aenean-ru-bristique-24',
@@ -357,10 +407,46 @@ const initialState = {
       stars: 2,
       promo: 'sale',
       newFurniture: true,
+      favorite: false,
     },
   ],
   cart: {
     products: [],
+  },
+  compare: {
+    products: [],
+  },
+  promotedProducts: {
+    hotDeals: {
+      title: 'HOT DEALS',
+      id: 'aenean-ru-bristique-4',
+      name: 'Aenean Ru Bristique 4',
+      category: 'bed',
+      price: 30,
+      oldPrice: '$40',
+      stars: 2,
+      promo: 'sale',
+      image:
+        'https://images.pexels.com/photos/6969780/pexels-photo-6969780.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      newFurniture: true,
+      heart: true,
+      addCompare: true,
+    },
+    shopNow: {
+      title: 'indoor',
+      spanTitle: 'furniture',
+      subtitle: 'save up to 50% of all furniture',
+      button: 'shop now',
+      image:
+        'https://images.pexels.com/photos/4993094/pexels-photo-4993094.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      imageAlt: 'bed',
+      image2:
+        'https://images.pexels.com/photos/2986011/pexels-photo-2986011.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      imageAlt2: 'sofa',
+      image3:
+        'https://images.pexels.com/photos/2082090/pexels-photo-2082090.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      imageAlt3: 'chair',
+    },
   },
 };
 
