@@ -4,6 +4,7 @@ import initialState from './initialState';
 import cartReducer from './cartRedux';
 import categoriesReducer from './categoriesRedux';
 import productsReducer from './productsRedux';
+import promotionsReducer from './promotionsRedux';
 import brandsReducer from './brandsRedux';
 import commentsReducer from './commentsRedux';
 import compareProductsReducer from './compareRedux';
@@ -13,6 +14,7 @@ const reducers = {
   cart: cartReducer,
   categories: categoriesReducer,
   products: productsReducer,
+  promotions: promotionsReducer,
   brands: brandsReducer,
   comments: commentsReducer,
   compare: compareProductsReducer,

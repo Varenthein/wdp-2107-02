@@ -28,3 +28,8 @@ $transition-button-text: all 250ms;
 .hover_anim_text {
   transition: $transition-button-text;
 }
+
+/*Promotions*/
+$promotions-color-main: rgb(255, 145, 0);
+$promotions-color-light: rgb(247, 238, 238);
+$promotions-color-dark: rgb(61, 53, 53)
