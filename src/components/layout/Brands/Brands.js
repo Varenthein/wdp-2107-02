@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import styles from './Brands.module.scss';
 import Button from '../../common/Button/Button';
+import Swipeable from './../../common/Swipeable/SwipeComponent';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
@@ -35,31 +36,34 @@ const Brands = ({ brands }) => {
     }
   };
   return (
-    <div className={styles.root}>
-      <div className={'container ' + styles.container}>
-        <div className='row'>
-          <div
-            className={
-              'col-1 d-flex justify-content-end align-items-center ' + styles.divButton
-            }
-          >
-            <Button variant='small' className={styles.button} onClick={prev}>
-              <FontAwesomeIcon icon={faChevronLeft}></FontAwesomeIcon>
-            </Button>
-          </div>
-          <div className={'col-10 d-flex ' + styles.imageBox}>
-            {brands.slice(activePage * n, (activePage + 1) * n).map(brandData => (
-              <img key={brandData.id} src={brandData.src} alt='brands1' />
-            ))}
-          </div>
-          <div className={'col-1 d-flex align-items-center ' + styles.divButton}>
-            <Button variant='small' className={styles.button} onClick={next}>
-              <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
-            </Button>
+    <Swipeable leftAction={prev} rightAction={next}>
+      <div className={styles.root}>
+        <div className={'container ' + styles.container}>
+          <div className='row'>
+            <div
+              className={
+                'col-1 d-flex justify-content-end align-items-center ' +
+                styles.divButton
+              }
+            >
+              <Button variant='small' className={styles.button} onClick={prev}>
+                <FontAwesomeIcon icon={faChevronLeft}></FontAwesomeIcon>
+              </Button>
+            </div>
+            <div className={'col-10 d-flex ' + styles.imageBox}>
+              {brands.slice(activePage * n, (activePage + 1) * n).map(brandData => (
+                <img key={brandData.id} src={brandData.src} alt='brands1' />
+              ))}
+            </div>
+            <div className={'col-1 d-flex align-items-center ' + styles.divButton}>
+              <Button variant='small' className={styles.button} onClick={next}>
+                <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
+              </Button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </Swipeable>
   );
 };
 
