@@ -1,4 +1,82 @@
 const initialState = {
+  brands: [
+    {
+      id: 1,
+      src:
+        'https://cdn.pixabay.com/photo/2016/11/23/14/29/living-room-1853203_1280.jpg',
+    },
+    {
+      id: 2,
+      src: 'https://cdn.pixabay.com/photo/2016/04/18/13/53/room-1336497_1280.jpg',
+    },
+    {
+      id: 3,
+      src: 'https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484_1280.jpg',
+    },
+    {
+      id: 4,
+      src: 'https://cdn.pixabay.com/photo/2016/11/29/08/43/blank-1868502_1280.jpg',
+    },
+    {
+      id: 5,
+      src: 'https://cdn.pixabay.com/photo/2015/12/08/00/26/desk-1081708_1280.jpg',
+    },
+    {
+      id: 6,
+      src:
+        'https://images.pexels.com/photos/2082095/pexels-photo-2082095.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+    },
+    {
+      id: 7,
+      src:
+        'https://images.pexels.com/photos/6045341/pexels-photo-6045341.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    },
+    {
+      id: 8,
+      src: 'https://cdn.pixabay.com/photo/2016/11/29/08/43/blank-1868502_1280.jpg',
+    },
+    {
+      id: 9,
+      src:
+        'https://cdn.pixabay.com/photo/2016/11/23/14/29/living-room-1853203_1280.jpg',
+    },
+    {
+      id: 10,
+      src: 'https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484_1280.jpg',
+    },
+    {
+      id: 11,
+      src: 'https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484_1280.jpg',
+    },
+    {
+      id: 12,
+      src: 'https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484_1280.jpg',
+    },
+    {
+      id: 13,
+      src: 'https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484_1280.jpg',
+    },
+    {
+      id: 14,
+      src: 'https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484_1280.jpg',
+    },
+    {
+      id: 15,
+      src: 'https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484_1280.jpg',
+    },
+    {
+      id: 16,
+      src: 'https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484_1280.jpg',
+    },
+    {
+      id: 17,
+      src: 'https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484_1280.jpg',
+    },
+    {
+      id: 18,
+      src: 'https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484_1280.jpg',
+    },
+  ],
   comments: [
     {
       id: 1,
