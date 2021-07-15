@@ -477,6 +477,68 @@ const initialState = {
       imageAlt3: 'chair',
     },
   },
+  gallery: [
+    {
+      id: '1',
+      name: 'Aenean Ru Bristique 1',
+      active: true,
+      stars: 2,
+      image:
+        'https://images.pexels.com/photos/545012/pexels-photo-545012.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      oldPrice: 380,
+      price: 300,
+    },
+    {
+      id: '2',
+      name: 'Aenean Ru Bristique 2',
+      active: false,
+      stars: 5,
+      image:
+        'https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      oldPrice: 700,
+      price: 500,
+    },
+    {
+      id: '3',
+      name: 'Aenean Ru Bristique 3',
+      active: false,
+      stars: 3,
+      image:
+        'https://images.pexels.com/photos/2631746/pexels-photo-2631746.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      oldPrice: 680,
+      price: 300,
+    },
+    {
+      id: '4',
+      name: 'Aenean Ru Bristique 4',
+      active: false,
+      stars: 4,
+      image:
+        'https://images.pexels.com/photos/2062431/pexels-photo-2062431.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      oldPrice: 500,
+      price: 450,
+    },
+    {
+      id: '5',
+      name: 'Aenean Ru Bristique 5',
+      active: false,
+      stars: 3,
+      image:
+        'https://images.pexels.com/photos/6969780/pexels-photo-6969780.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      oldPrice: 800,
+      price: 400,
+    },
+    {
+      id: '6',
+      name: 'Aenean Ru Bristique 6',
+      active: false,
+      stars: 4,
+      image:
+        'https://images.pexels.com/photos/7415755/pexels-photo-7415755.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      oldPrice: 1000,
+      price: 560,
+    },
+  ],
 };
 
 export default initialState;

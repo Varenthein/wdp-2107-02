@@ -37,8 +37,8 @@ const StarRating = ({ myRating, stars, addRating, id }) => {
           />
           <FontAwesomeIcon
             icon={faStar}
-            onMouseEnter={() => setHoverRating(star)}
-            onMouseLeave={() => setHoverRating(0)}
+            Enter={() => setHoverRating(star)}
+            Leave={() => setHoverRating(0)}
             style={{ color: getColorSet(myRating, star, hoverRating, stars) }}
           ></FontAwesomeIcon>
         </label>
