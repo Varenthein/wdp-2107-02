@@ -10,18 +10,18 @@
 .links:hover {
   text-decoration: none;
   h5, p{
-    color: $active-text}
+    color: $primary;}
   
   .iconWrapper {
-    color: $featurebox-icon-bcg;
+    color: #ffffff;
 
     &::after {
-      background-color: $content-active-bcg;
-      border-color: $content-active-border;
+      background-color: $primary;
+      border-color: $primary;
     }
   }
   .content {
-    color: $active-content;
+    color: $primary;
   }
 }
 
