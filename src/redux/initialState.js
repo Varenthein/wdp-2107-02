@@ -75,6 +75,8 @@ const initialState = {
     {
       id: 18,
       src: 'https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484_1280.jpg',
+    },
+  ],
   comments: [
     {
       id: 1,
