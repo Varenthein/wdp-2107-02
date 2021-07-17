@@ -7,7 +7,7 @@
 
     .menuWrapper {
       h6 {
-        color: $footer-menu-text;
+        color: #ffffff;
         text-transform: uppercase;
         margin: 0 0 1rem 0;
       }
@@ -20,11 +20,11 @@
           a {
             font-size: 14px;
             line-height: 30px;
-            color: $footer-menu-link;
+            color: rgb(169, 169, 169);
             @extend .hover_anim_text;
 
             &:hover {
-              color: $footer-menu-link-hover;
+              color: #ffffff;
               text-decoration: none;
             }
           }
@@ -44,7 +44,7 @@
   }
 
   .bottomBar {
-    background-color: $footer-bottomBar-bcg;
+    background-color: $footer-claim-bg;
 
     :global(.container) > :global(.row) {
       height: 95px;
@@ -53,7 +53,7 @@
     .copyright {
       p {
         margin: 0;
-        color: $footer-copyright-text;
+        color: rgb(169, 169, 169);
         font-size: 14px;
         line-height: 26px;
       }
@@ -70,11 +70,11 @@
           margin-left: 1rem;
 
           a {
-            color: $footer-sm-links;
+            color: rgb(169, 169, 169);
             text-decoration: none;
 
             &:hover {
-              color: $footer-sm-links-hover;
+              color: $primary;
             }
           }
         }

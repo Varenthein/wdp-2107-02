@@ -1,14 +1,14 @@
 @import "../../../styles/settings.scss";
 
 .root {
-  border: 1px solid $featurebox-border;
+  border: 1px solid #b6b6b6;
   text-align: center;
   margin-top: 40px;
 
   .iconWrapper {
     height: 60px;
     transform: translateY(-50%);
-    color: $featurebox-text;
+    color: $text-color;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +21,7 @@
 
     &::before {
       content: "";
-      border: 1px solid $featurebox-icon-border;
+      border: 1px solid #b6b6b6;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -29,7 +29,7 @@
       width: 76px;
       height: 76px;
       border-radius: 100%;
-      background-color: $featurebox-icon-bcg;
+      background-color: #ffffff;
       z-index: -1;
     }
 
@@ -42,13 +42,13 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      border: 1px solid $featurebox-icon-after-border;
+      border: 1px solid #b6b6b6;
     }
   }
 
   .content {
     text-transform: uppercase;
-    color: $content-text;
+    color: rgb(42, 42, 42);
     margin-top: -0.5rem;
     letter-spacing: 1px;
     font-weight: 300;
@@ -64,16 +64,16 @@
 
   &:hover {
     .iconWrapper {
-      color: $featurebox-icon-bcg;
+      color: #ffffff;
 
       &::after {
-        background-color: $content-active-bcg;
-        border-color: $content-active-border;
+        background-color: $primary;
+        border-color: $primary;
       }
     }
 
     .content {
-      color: $active-content;
+      color: $primary;
     }
   }
 }

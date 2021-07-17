@@ -1,6 +1,7 @@
 @import "../../../styles/settings.scss";
 
 .root {
+  margin-bottom: 30px;
   .panelBar {
     margin-bottom: 30px;
     position: relative;
@@ -11,6 +12,7 @@
 
     .heading {
       position: relative;
+      width: 100%;
 
       h3 {
         color: $primary;
@@ -27,42 +29,7 @@
         bottom: -4px;
         left: 0;
         width: 45px;
-        border-bottom: 4px solid $primary;
-      }
-    }
-
-    .menu {
-      text-align: center;
-      ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        li {
-          display: inline-block;
-          margin: 0 0.5rem;
-          font-weight: 600;
-
-          a {
-            color: rgb(42, 42, 42);
-            position: relative;
-            text-decoration: none;
-            font-size: 18px;
-            display: block;
-            @extend .hover_anim_text;
-
-            &.active,
-            &:hover {
-              &::before {
-                content: "";
-                position: absolute;
-                bottom: -4px;
-                left: 0;
-                width: 100%;
-                border-bottom: 4px solid $primary;
-              }
-            }
-          }
-        }
+        border-bottom: 4px solid #d58e32;
       }
     }
 
@@ -92,20 +59,46 @@
 
             &.active,
             &:hover {
-              background-color: $primary;
+              background-color: #d58e32;
             }
           }
         }
       }
     }
   }
+  .imageBox {
+    overflow: hidden;
+    height: 75px;
+    text-align: right;
+  }
   
-  .fadeout {
-    opacity: 0;
-    transition: 0.6s;
+  img {
+    width: 50px;
+    height: 100%;
+    text-align: center;
+    object-fit: cover;
+    right: 0;
+    border-radius: 5px;
   }
 
-  .fadein {
-    transition: 1.5s;
+  .apostrof{
+    font-size: 75px;
+    text-align: center;
+    height:50px;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .name {
+    position: relative;
+  }
+
+  .name p {
+    margin: 0;
+    position: absolute;               
+    top: 50%;                         
+    transform: translate(0, -50%);
   }
 }

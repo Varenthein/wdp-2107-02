@@ -18,9 +18,6 @@ $transparent: transparent;
 $white: #ffffff;
 $cream: #f7f7ee;
 
-/*** LIST OF COLOURS BY COMPONENT ***/
-
-
 /* Button Component */
 
 $btn-main-bcg: $almostBlack;
@@ -133,14 +130,16 @@ $footer-sm-links-hover: $orange;
 $promotions-color-main: $orange;
 $promotions-color-light: $cream;
 $promotions-color-dark: $charcoal;
+
 // TRANSITIONS //
 $transition-button-bg: all 250ms;
 $transition-button-text: all 250ms;
+
 // ANIMATIONS //
 .hover_anim_bg {
     transition: $transition-button-bg;
 }
-
 .hover_anim_text {
     transition: $transition-button-text;
 }
+

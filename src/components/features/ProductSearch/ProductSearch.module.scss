@@ -1,13 +1,13 @@
 @import "../../../styles/settings.scss";
 
 .root {
-  border: 1px solid $productsearch-border;
+  border: 1px solid $form-border-color;
   display: inline-flex;
   height: 45px;
-  color: $productsearch-text;
+  color: $text-color;
 
   .category {
-    border-right: 1px solid $productsearch-category-border;
+    border-right: 1px solid $form-border-color;
     display: flex;
     align-items: center;
     position: relative;
@@ -21,19 +21,19 @@
       border: 0;
       width: 100%;
       height: 100%;
-      background-color: $productsearch-select-bcg;
+      background-color: transparent;
       padding: 10px 35px; 
       
       li {
         border: 0;
         width: 100%;
-        background-color: $productsearch-list-bcg;
+        background-color: white;
         padding: 10px 10px 5px 15px;
         display: none;
 
         &:hover {
-          background-color: $productsearch-hover-bcg;
-          color: $productsearch-text-hover;
+          background-color: $primary;
+          color: white
         }
       }
 
@@ -44,8 +44,8 @@
 
     &:hover {
       display: block;
-      background-color: $productsearch-hover-bcg;
-      border-color: $productsearch-border-hover;
+      background-color: $primary;
+      border-color: $primary;
     }
 
     &:hover .icon {
@@ -53,7 +53,7 @@
     }
 
     .icon:first-child {
-      color: $productsearch-icon;
+      color: $primary;
       position: absolute;
       left: 10px;
       z-index: 0;
@@ -66,6 +66,7 @@
     }
   }
   
+
   .searchField {
     display: flex;
     align-items: center;
@@ -78,13 +79,13 @@
       outline: none;
 
       &::placeholder {
-        color: $productsearch-placeholder;
+        color: $text-color;
       }
     }
 
     button {
       border: 0;
-      background-color: $productsearch-button-bcg;
+      background-color: transparent;
       outline: none;
     }
   }

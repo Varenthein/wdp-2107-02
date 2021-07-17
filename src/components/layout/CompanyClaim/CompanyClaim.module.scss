@@ -1,7 +1,7 @@
 @import "../../../styles/settings.scss";
 
 .root {
-  background-color: $companyclaim-bcg;
+  background-color: $header-bg;
 
   :global(.container) > :global(.row) {
     height: 145px;
@@ -12,12 +12,12 @@
       margin: 0;
       font-size: 17px;
       line-height: 42px;
-      color: $companyclaim-phonenumber-text;
+      color: rgb(216, 216, 216);
       font-weight: 500;
 
       .icon {
         font-size: 32px;
-        color: $companyclaim-phonenumber-icon;
+        color: $primary;
         vertical-align: middle;
         margin-top: -3px;
         margin-right: 0.8rem;
@@ -32,10 +32,10 @@
     .cartBox {
       display: inline-block;
       position: relative;
-      color: $companyclaim-cart-text;
+      color: #ffffff;
 
       .cartIcon {
-        background-color: $companyclaim-cart-bcg;
+        background-color: $primary;
         width: 55px;
         height: 50px;
         border-radius: 3px;
@@ -53,12 +53,12 @@
         width: 28px;
         height: 27px;
         border-radius: 14px;
-        background-color: $companyclaim-cartCounter-bcg;
+        background-color: $header-bg;
         display: flex;
         align-items: center;
         justify-content: flex-start;
         font-size: 14px;
-        color: $companyclaim-cartCounter-text;
+        color: rgb(224, 227, 237);
         position: absolute;
         top: 50%;
         right: 0;
@@ -69,7 +69,7 @@
 
       &:hover {
         .cartIcon {
-          background-color: lighten($companyclaim-cartCounter-text-hover-bcg, 10%);
+          background-color: lighten($primary, 10%);
         }
       }
     }
