@@ -58,8 +58,8 @@ class NewFurniture extends React.Component {
             onClick={() => this.handlePageChange(i)}
             className={i === activePage && styles.active}
           >
-            page {i}{' '}
-          </a>{' '}
+            page {i}
+          </a>
         </li>
       );
     }
@@ -75,35 +75,33 @@ class NewFurniture extends React.Component {
             <div className={styles.panelBar}>
               <div className='row no-gutters align-items-end'>
                 <div className={'col-auto ' + styles.heading}>
-                  <h3> New furniture </h3>{' '}
-                </div>{' '}
+                  <h3> New furniture </h3>
+                </div>
                 <div className={'col ' + styles.menu}>
                   <ul>
-                    {' '}
                     {categories.map(item => (
                       <li key={item.id}>
                         <a
                           className={item.id === activeCategory ? styles.active : ''}
                           onClick={() => this.handleCategoryChange(item.id)}
                         >
-                          {' '}
-                          {item.name}{' '}
-                        </a>{' '}
+                          {item.name}
+                        </a>
                       </li>
-                    ))}{' '}
-                  </ul>{' '}
-                </div>{' '}
+                    ))}
+                    ;
+                  </ul>
+                </div>
                 <div className={'col-auto ' + styles.dots}>
-                  <ul> {dots} </ul>{' '}
-                </div>{' '}
-              </div>{' '}
-            </div>{' '}
+                  <ul> {dots} </ul>
+                </div>
+              </div>
+            </div>
             <div
               className={
                 'row' + (isFading ? ' ' + styles.fadeout : ' ' + styles.fadein)
               }
             >
-              {' '}
               {categoryProducts
                 .slice(activePage * itemsPerPage, (activePage + 1) * itemsPerPage)
                 .map((item, i) => (
@@ -114,12 +112,12 @@ class NewFurniture extends React.Component {
                       product={item}
                       addRating={addRating}
                       changeFavorite={this.props.setFav}
-                    />{' '}
+                    />
                   </div>
-                ))}{' '}
-            </div>{' '}
-          </div>{' '}
-        </div>{' '}
+                ))}
+            </div>
+          </div>
+        </div>
         <ProductsCompare />
       </SwipeComponent>
     );
