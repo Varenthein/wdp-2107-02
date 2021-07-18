@@ -2,7 +2,7 @@
 
 .root {
   box-shadow: 2px 3.464px 6px rgba(1, 2, 2, 0.2);
-  background-color: #ffffff;
+  background-color: $menubar-bcg;
 
   :global(.container) > :global(.row) {
     height: auto;
@@ -28,14 +28,14 @@
     }
 
     a {
-      color: $text-color;
+      color: $menubar-link-text;
       text-transform: uppercase;
       font-size: 12px;
       padding: 1rem;
       text-decoration: none;
       display: flex;
       align-items: center;
-      border-top: 4px solid #ffffff;
+      border-top: 4px solid $menubar-link-border;
       font-weight: 500;
       letter-spacing: 1px;
       @extend .hover_anim_text;
@@ -43,14 +43,14 @@
 
       &:hover,
       &.active {
-        background-color: $primary;
-        color: #ffffff;
-        border-color: $primary;
-        width: 100%;;
+        background-color: $menubar-link-hover-active-bcg;
+        color: $menubar-hover-active-text;
+        border-color: $menubar-hover-active-border;
+        width: 100%;
       }
 
       &.active {
-        border-color: $text-color;
+        border-color: $menubar-link-active-border;
       }
     }
   }
@@ -112,13 +112,13 @@
             overflow-y: auto;
             ul {
               flex-wrap: wrap;
-              border: 1px solid $form-border-color;
+              border: 1px solid $menubar-media-border;
       
               li {
                 flex: 100%;
                 width: 100%;
                 justify-content: center;
-                border-bottom: 1px solid $form-border-color;
+                border-bottom: 1px solid $menubar-media-border;
               }
       
               li:last-child {
