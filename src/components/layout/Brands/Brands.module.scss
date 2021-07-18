@@ -28,7 +28,7 @@
     width: 98%;
     height: 1px;
     transform: translateX(-50%);
-    background-color: #b6b6b6;
+    background-color: $brands-after-bcg;
   }
   .container::before {
     position: absolute;
@@ -38,6 +38,6 @@
     width: 98%;
     height: 1px;
     transform: translateX(-50%);
-    background-color: #b6b6b6;
+    background-color: $brands-before-bcg;
   }
 }

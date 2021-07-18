@@ -9,6 +9,7 @@ $charcoal: #292929;
 $darkGray: #363636;
 $ghostWhite: #e1e1e1;
 $gray: #434343;
+$mediumGray: #808080;
 $green: #008000;
 $lightGray: #b2b2b2;
 $orange: #d58e32;
@@ -17,6 +18,11 @@ $snowWhite: #f4f5f7;
 $transparent: transparent;
 $white: #ffffff;
 $cream: #f7f7ee;
+$black: #000000;
+$lightGreen: #79AE30;
+$ivory: #FAEBD7;
+$darkGreen: #2F4F4F;
+
 
 /* Button Component */
 
@@ -130,6 +136,79 @@ $footer-sm-links-hover: $orange;
 $promotions-color-main: $orange;
 $promotions-color-light: $cream;
 $promotions-color-dark: $charcoal;
+
+/*Carousel*/
+$carousel-hotdeals-bcg: $almostBlack;
+$carousel-hotdeals-text: $white;
+$carousel-list-bcg: $almostBlack;
+$carousel-link-bcg: $ghostWhite;
+$carousel-link-bcg-hover: $orange;
+$carousel-description: $almostWhite;
+$carousel-button-wrapper-link: $white;
+$carousel-button-bcg: $almostBlack;
+$carousel-button-text: $white;
+$carousel-button-hover-bcg: $orange;
+
+/*Tooltip*/
+$tooltip-bck: $mediumGray;
+$tooltip-arrow-bck: $mediumGray;
+$tooltip-bcg: $black;
+$tooltip-text: $white;
+$tooltip-button-bcg: $black;
+
+/*Gallery*/
+$gallery-heading-border: $ivory;
+$gallery-heading-text: $lightGreen;
+$gallery-heading-before: $orange;
+$gallery-content-border: $ivory;
+$gallery-menu-border: $ivory;
+$gallery-menu-link: $charcoal;
+$gallery-menu-link-hover-bcg: $ivory;
+$gallery-menu-link-hover-text: $orange;
+$gallery-menu-link-hover-border: $orange;
+$gallery-image-border: $ivory;
+$gallery-details-box-shadow: $mediumGray;
+$gallery-prices-bcg: $lightGray;
+$gallery-details-content-stars: $charcoal;
+$gallery-prices-text: $white;
+$gallery-slider-button-bcg: $lightGray;
+$gallery-slider-button-text: $white;
+$gallery-slider-border: $ivory;
+$gallery-slider-bcg: $mediumGray;
+$gallery-add-image-border: $ivory;
+$gallery-price-h3: $lightGreen;
+$gallery-price-h4: $orange;
+$gallery-price-button-bcg: $lightGreen;
+
+/*HotDeals*/
+$hotdeals-border: $orange;
+$hotdeals-dots-text: $white;
+$hotdeals-dots-border-after: $charcoal;
+$hotdeals-dots-bcg-after: $charcoal;
+$hotdeals-content-text: $orange;
+$hotdeals-line-border: $almostBlack;
+$hotdeals-line-border-before: $orange;
+$hotdeals-oldprice: $lightGray;
+
+/*ProductsCompare*/
+$compare-border: $orange;
+$compare-text: $orange;
+$compare-button-bcg: $orange;
+$compare-button-text: $white;
+$compare-keyframe-to-bcg: $gray;
+
+/*Brands*/
+$brands-after-bcg: $silver;
+$brands-before-bcg: $silver;
+
+/*Feedback*/
+$feedback-panelbar-border: $almostWhite;
+$fedback-heading-text: $orange;
+$feedback-heading-before-border: $orange;
+$feedback-dots-list-bcg: $white;
+$feedback-list-link-bcg:$ghostWhite;
+$feedback-list-link-bcg-hover: $orange;
+
 
 // TRANSITIONS //
 $transition-button-bg: all 250ms;

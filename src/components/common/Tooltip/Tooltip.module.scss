@@ -1,7 +1,5 @@
 @import "../../../styles/settings.scss";
 
-$tooltip-bck: grey;
-$tooltip-arrow-bck: grey;
 
 .tooltipWrapper {
   position: relative;
@@ -13,8 +11,8 @@ $tooltip-arrow-bck: grey;
     left: 100%;
     transform: translateY(-50%);
     margin-left: 20px;
-    background-color: black;
-    color: white;
+    background-color: $tooltip-bcg;
+    color: $tooltip-text;
     font-size: 12px;
     white-space: nowrap;
     padding: 5px 10px;
@@ -26,7 +24,7 @@ $tooltip-arrow-bck: grey;
       position: absolute;
       top: 35%;
       left: 0;
-      background-color: black;
+      background-color: $tooltip-button-bcg;
       transform: rotate(45deg);
       margin-left: -5px;
 
