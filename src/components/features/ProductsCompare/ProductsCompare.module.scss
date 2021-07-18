@@ -15,15 +15,15 @@
     text-align: center;
     text-transform: uppercase;
     padding: 20px;
-    color: $primary;
-    border-bottom: 1px solid $primary;
+    color: $compare-text;
+    border-bottom: 1px solid $compare-border;
 }
 }
 
 .button {
-  background-color: $primary;
+  background-color: $compare-button-bcg;
   border: none;
-  color: white;
+  color: $compare-button-text;
   padding: 10px 25px;
   text-align: center;
   text-decoration: none;
@@ -94,6 +94,6 @@
   }
   to {
     height: 350px;
-    background: $header-topbar-bg;
+    background: $compare-keyframe-to-bcg;
   }
 }

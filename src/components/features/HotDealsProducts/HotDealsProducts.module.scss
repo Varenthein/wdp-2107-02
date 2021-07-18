@@ -1,7 +1,7 @@
 @import "../../../styles/settings.scss";
 
 .root {
-  border: 1px solid $primary;
+  border: 1px solid $hotdeals-border;
   margin-bottom: 2rem;
 
 
@@ -33,19 +33,19 @@
       transform: translateY(-30px);
 
       h5 {
-        color: white;
+        color: $hotdeals-dots-text;
         z-index: 2;
         line-height: 0.5;
         text-align: center;
       }
 
       p {
-        color:white;
+        color: $hotdeals-dots-text;
         z-index: 2;
       }
       &::after {
         content: "";
-        border: 1px solid $form-border-color;
+        border: 1px solid $hotdeals-dots-border-after;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -53,7 +53,7 @@
         width: 76px;
         height: 76px;
         border-radius: 100%;
-        background-color: $form-border-color;
+        background-color: $hotdeals-dots-bcg-after;
         z-index: 1;
       }
     }
@@ -73,7 +73,7 @@
     text-align: center;
 
     h5 {
-      color: $primary;
+      color: $hotdeals-content-text;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 1px;
@@ -82,8 +82,7 @@
 
   .line {
     margin: 0 15px;
-    border-bottom: 1px solid $text-color;
-    position: relative;
+    border-bottom: 1px solid $hotdeals-line-border;
 
     &::before {
       content: "";
@@ -91,7 +90,7 @@
       bottom: -1px;
       left: 50%;
       width: 30px;
-      border-bottom: 4px solid $primary;
+      border-bottom: 4px solid $hotdeals-line-border-before;
       transform: translateX(-50%);
     }
   }
@@ -111,7 +110,7 @@
     .oldPrice{
       margin: 5px;
       text-decoration: line-through;
-      color: $gray-text-color;
+      color: $hotdeals-oldprice;
     }
   }
 }

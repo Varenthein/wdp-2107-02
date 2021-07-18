@@ -4,8 +4,8 @@
   .hotDeals {
     height: 50px;
     width: 100%;
-    background-color: $text-color;
-    color: #ffffff;
+    background-color: $carousel-hotdeals-bcg;
+    color: $carousel-hotdeals-text;
     text-transform: uppercase;
   
     p{
@@ -22,7 +22,7 @@
         margin: 0;
         padding: 0 0 0 1rem;
         list-style: none;
-        background-color: $text-color;
+        background-color: $carousel-list-bcg;
         transform: translateY(15px);
   
         li {
@@ -33,11 +33,11 @@
             width: 13px;
             height: 13px;
             border-radius: 6px;
-            background-color: #e1e1e1;
+            background-color: $carousel-link-bcg;
             font-size: 0;
             &.active,
             &:hover {
-                background-color: $primary;
+                background-color: $carousel-link-bcg-hover;
             }
           }
         }
@@ -75,7 +75,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       text-transform: uppercase;
-      color: rgb(216, 216, 216);
+      color: $carousel-description;
       text-align: center;
 
       h2 {
@@ -119,13 +119,13 @@
     }
 
     a {
-      color: white;
+      color: $carousel-button-wrapper-link;
 
       .carouselButton {
         height: 40px;
         width: 100%;
-        background-color: $text-color;
-        color: white;
+        background-color: $carousel-button-bcg;
+        color: $carousel-button-text;
         text-align: center;
 
         .icon {
@@ -133,7 +133,7 @@
         }
 
         &:hover {
-          background-color: $primary;
+          background-color: $carousel-button-hover-bcg;
         }
       }
     }

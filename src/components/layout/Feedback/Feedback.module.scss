@@ -7,7 +7,7 @@
     position: relative;
 
     :global(.row) > * {
-      border-bottom: 4px solid #e2e2e2;
+      border-bottom: 4px solid $feedback-panelbar-border;
     }
 
     .heading {
@@ -15,7 +15,7 @@
       width: 100%;
 
       h3 {
-        color: $primary;
+        color: $fedback-heading-text;
         text-transform: uppercase;
         font-size: 20px;
         line-height: 38px;
@@ -29,7 +29,7 @@
         bottom: -4px;
         left: 0;
         width: 45px;
-        border-bottom: 4px solid #d58e32;
+        border-bottom: 4px solid $feedback-heading-before-border;
       }
     }
 
@@ -42,7 +42,7 @@
         margin: 0;
         padding: 0 0 0 1rem;
         list-style: none;
-        background-color: #ffffff;
+        background-color: $feedback-dots-list-bcg;
         transform: translateY(15px);
 
         li {
@@ -54,12 +54,12 @@
             width: 13px;
             height: 13px;
             border-radius: 6px;
-            background-color: #e1e1e1;
+            background-color: $feedback-list-link-bcg;
             font-size: 0;
 
             &.active,
             &:hover {
-              background-color: #d58e32;
+              background-color: $feedback-list-link-bcg-hover;
             }
           }
         }
