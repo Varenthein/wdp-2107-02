@@ -5,7 +5,7 @@
 
 ## Opis projektu
 
-Aplikacja sklepu z meblami, stworzona na potrzeby kursu programowania Kodilli Web Developer Plus. Napisana w językach JavaScript i SASS, w środowisku React / Redux, wykorzystuje również grid bootsrapa. Projekt był realizowany przez zespół kilku osób, z pomocą oprogramowania do zarządzania projektami Jira (tablica Kanban).
+Aplikacja sklepu z meblami, stworzona na potrzeby kursu programowania Kodilli Web Developer Plus. Napisana w językach JavaScript i SASS, w środowisku React / Redux, wykorzystuje również grid Bootstrapa. Projekt był realizowany przez zespół kilku osób, z pomocą oprogramowania do zarządzania projektami Jira (tablica Kanban).
 
 Strukutra katalogów:
 
