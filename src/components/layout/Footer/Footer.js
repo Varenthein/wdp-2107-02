@@ -7,7 +7,6 @@ import {
   faTwitter,
   faFacebookF,
   faYoutube,
-  faGooglePlusG,
   faLinkedinIn,
   faPinterestP,
 } from '@fortawesome/free-brands-svg-icons';
@@ -121,11 +120,6 @@ const Footer = ({ children }) => (
               <li>
                 <a href='#'>
                   <FontAwesomeIcon icon={faYoutube}>YouTube</FontAwesomeIcon>
-                </a>
-              </li>
-              <li>
-                <a href='#'>
-                  <FontAwesomeIcon icon={faGooglePlusG}>Google Plus</FontAwesomeIcon>
                 </a>
               </li>
               <li>
