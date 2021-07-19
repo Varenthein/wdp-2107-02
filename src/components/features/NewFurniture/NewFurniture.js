@@ -65,7 +65,7 @@ class NewFurniture extends React.Component {
           <div className='container'>
             <div className={styles.panelBar}>
               <div className='row no-gutters align-items-end'>
-                <div className={'col-auto ' + styles.heading}>
+                <div className={'col-12 col-md-auto' + styles.heading}>
                   <h3>New furniture</h3>
                 </div>
                 <div className={'col ' + styles.menu}>
@@ -88,13 +88,21 @@ class NewFurniture extends React.Component {
               </div>
             </div>
             <div
-              className={'row' + (isFading ? ' ' + styles.fadeout : ' ' + styles.fadein)}
+              className={
+                'row' + (isFading ? ' ' + styles.fadeout : ' ' + styles.fadein)
+              }
             >
-              {categoryProducts.slice(activePage * 8, (activePage + 1) * 8).map(item => (
-                <div key={item.id} className='col-3'>
-                  <ProductBox {...item} addRating={addRating} changeFavorite={this.props.setFav}/>
-                </div>
-              ))}
+              {categoryProducts
+                .slice(activePage * 8, (activePage + 1) * 8)
+                .map(item => (
+                  <div key={item.id} className='col-lg-3 col-md-4 col-sm-6 col-xs-12'>
+                    <ProductBox
+                      {...item}
+                      addRating={addRating}
+                      changeFavorite={this.props.setFav}
+                    />
+                  </div>
+                ))}
             </div>
           </div>
         </div>
