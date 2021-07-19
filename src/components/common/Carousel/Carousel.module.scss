@@ -7,24 +7,24 @@
     background-color: $carousel-hotdeals-bcg;
     color: $carousel-hotdeals-text;
     text-transform: uppercase;
-  
+
     p{
       padding: 10px;
       font-size: 20px;
     }
-  
+
     .dots {
       position: absolute;
       right: 0;
       top: 0;
-  
+
       ul {
         margin: 0;
         padding: 0 0 0 1rem;
         list-style: none;
         background-color: $carousel-list-bcg;
         transform: translateY(15px);
-  
+
         li {
           display: inline-block;
           margin-left: 0.5rem;
@@ -57,12 +57,12 @@
       object-fit: cover;
       z-index: -1;
 
-      
+
       &.fadeout {
         opacity: 0;
         transition: 1s;
       }
-    
+
       &.fadein {
         opacity: 1;
         transition: 1s;
@@ -91,7 +91,7 @@
         font-size: 20px;
       }
     }
- 
+
     // &::after {
     //   content: "";
     //   position: absolute;
@@ -147,6 +147,6 @@
   .secondWindow{
     flex: 0 0 100%;
     max-width: 100%;
-  }  
+  }
   }
 }
