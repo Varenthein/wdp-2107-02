@@ -1,0 +1,43 @@
+@import "../../../styles/settings.scss";
+@import "../../../styles/global.scss";
+
+.root {
+  padding: 10px 20px 20px 20px;
+  .container {
+    position: relative;
+    .button {
+      height: 60px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .imageBox {
+    height: 60px;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        padding: 0 5px;
+    }
+  }
+  .container::after {
+    position: absolute;
+    content: "";
+    bottom: -12px;
+    left: 50%;
+    width: 98%;
+    height: 1px;
+    transform: translateX(-50%);
+    background-color: $brands-after-bcg;
+  }
+  .container::before {
+    position: absolute;
+    content: "";
+    top: -12px;
+    left: 50%;
+    width: 98%;
+    height: 1px;
+    transform: translateX(-50%);
+    background-color: $brands-before-bcg;
+  }
+}

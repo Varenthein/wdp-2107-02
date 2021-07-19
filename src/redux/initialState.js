@@ -1,4 +1,82 @@
 const initialState = {
+  brands: [
+    {
+      id: 1,
+      src:
+        'https://cdn.pixabay.com/photo/2016/11/23/14/29/living-room-1853203_1280.jpg',
+    },
+    {
+      id: 2,
+      src: 'https://cdn.pixabay.com/photo/2016/04/18/13/53/room-1336497_1280.jpg',
+    },
+    {
+      id: 3,
+      src: 'https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484_1280.jpg',
+    },
+    {
+      id: 4,
+      src: 'https://cdn.pixabay.com/photo/2016/11/29/08/43/blank-1868502_1280.jpg',
+    },
+    {
+      id: 5,
+      src: 'https://cdn.pixabay.com/photo/2015/12/08/00/26/desk-1081708_1280.jpg',
+    },
+    {
+      id: 6,
+      src:
+        'https://images.pexels.com/photos/2082095/pexels-photo-2082095.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+    },
+    {
+      id: 7,
+      src:
+        'https://images.pexels.com/photos/6045341/pexels-photo-6045341.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    },
+    {
+      id: 8,
+      src: 'https://cdn.pixabay.com/photo/2016/11/29/08/43/blank-1868502_1280.jpg',
+    },
+    {
+      id: 9,
+      src:
+        'https://cdn.pixabay.com/photo/2016/11/23/14/29/living-room-1853203_1280.jpg',
+    },
+    {
+      id: 10,
+      src: 'https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484_1280.jpg',
+    },
+    {
+      id: 11,
+      src: 'https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484_1280.jpg',
+    },
+    {
+      id: 12,
+      src: 'https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484_1280.jpg',
+    },
+    {
+      id: 13,
+      src: 'https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484_1280.jpg',
+    },
+    {
+      id: 14,
+      src: 'https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484_1280.jpg',
+    },
+    {
+      id: 15,
+      src: 'https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484_1280.jpg',
+    },
+    {
+      id: 16,
+      src: 'https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484_1280.jpg',
+    },
+    {
+      id: 17,
+      src: 'https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484_1280.jpg',
+    },
+    {
+      id: 18,
+      src: 'https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484_1280.jpg',
+    },
+  ],
   comments: [
     {
       id: 1,
@@ -29,11 +107,26 @@ const initialState = {
     },
   ],
   categories: [
-    { id: 'bed', name: 'Bed' },
-    { id: 'chair', name: 'Chair' },
-    { id: 'sofa', name: 'Sofa' },
-    { id: 'table', name: 'Table' },
-    { id: 'dining', name: 'Dining' },
+    {
+      id: 'bed',
+      name: 'Bed',
+    },
+    {
+      id: 'chair',
+      name: 'Chair',
+    },
+    {
+      id: 'sofa',
+      name: 'Sofa',
+    },
+    {
+      id: 'table',
+      name: 'Table',
+    },
+    {
+      id: 'dining',
+      name: 'Dining',
+    },
   ],
   products: [
     {
@@ -337,21 +430,77 @@ const initialState = {
   cart: {
     products: [],
   },
+  promotions: [
+    {
+      id: 'sofa',
+      image:
+        'https://images.pexels.com/photos/3757055/pexels-photo-3757055.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      title: 'guest room',
+      strong: 'sofa',
+      price: '-20%',
+    },
+    {
+      id: 'chair',
+      image:
+        'https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      title: 'chair',
+      strong: 'office',
+      subtitle: 'collection',
+      price: '$200.000',
+    },
+    {
+      id: 'bed',
+      image:
+        'https://images.pexels.com/photos/775219/pexels-photo-775219.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      title: 'collection',
+      strong: 'special',
+      price: 'save up 45% of furniture',
+    },
+  ],
   compare: {
     products: [],
   },
   promotedProducts: {
     hotDeals: {
       title: 'HOT DEALS',
-      id: 'aenean-ru-bristique-4',
-      name: 'Aenean Ru Bristique 4',
-      category: 'bed',
-      price: 30,
-      oldPrice: '$40',
-      stars: 2,
-      promo: 'sale',
-      image:
-        'https://images.pexels.com/photos/6969780/pexels-photo-6969780.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      products: [
+        {
+          href:
+            'https://images.pexels.com/photos/6980665/pexels-photo-6980665.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+          alt: 'bed',
+          id: 'aenean-ru-bristique-1',
+          name: 'Aenean Ru Bristique 1',
+          category: 'bed',
+          price: 250,
+          oldPrice: '$500',
+          stars: 4,
+          promo: 'sale',
+        },
+        {
+          href:
+            'https://images.pexels.com/photos/3209045/pexels-photo-3209045.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+          alt: 'sofa',
+          id: 'aenean-ru-bristique-2',
+          name: 'Aenean Ru Bristique 2',
+          category: 'sofa',
+          price: 100,
+          oldPrice: '$250',
+          stars: 3,
+          promo: 'sale',
+        },
+        {
+          href:
+            'https://images.pexels.com/photos/3097112/pexels-photo-3097112.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+          alt: 'chair',
+          id: 'aenean-ru-bristique-3',
+          name: 'Aenean Ru Bristique 3',
+          category: 'chair',
+          price: 40,
+          oldPrice: '$100',
+          stars: 2,
+          promo: 'sale',
+        },
+      ],
       newFurniture: true,
       heart: true,
       addCompare: true,
@@ -359,19 +508,89 @@ const initialState = {
     shopNow: {
       title: 'indoor',
       spanTitle: 'furniture',
-      subtitle: 'save up to 50% of all furniture',
+      subTitle: 'save up to 50% of all furniture',
       button: 'shop now',
-      image:
-        'https://images.pexels.com/photos/4993094/pexels-photo-4993094.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-      imageAlt: 'bed',
-      image2:
-        'https://images.pexels.com/photos/2986011/pexels-photo-2986011.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-      imageAlt2: 'sofa',
-      image3:
-        'https://images.pexels.com/photos/2082090/pexels-photo-2082090.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
-      imageAlt3: 'chair',
+      images: [
+        {
+          href:
+            'https://images.pexels.com/photos/4993094/pexels-photo-4993094.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+          alt: 'bed',
+        },
+        {
+          href:
+            'https://images.pexels.com/photos/2062431/pexels-photo-2062431.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+          alt: 'bed',
+        },
+        {
+          href:
+            'https://images.pexels.com/photos/2082090/pexels-photo-2082090.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+          alt: 'chair',
+        },
+      ],
     },
   },
+  gallery: [
+    {
+      id: '1',
+      name: 'Aenean Ru Bristique 1',
+      active: true,
+      stars: 2,
+      image:
+        'https://images.pexels.com/photos/545012/pexels-photo-545012.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      oldPrice: 380,
+      price: 300,
+    },
+    {
+      id: '2',
+      name: 'Aenean Ru Bristique 2',
+      active: false,
+      stars: 5,
+      image:
+        'https://images.pexels.com/photos/90317/pexels-photo-90317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      oldPrice: 700,
+      price: 500,
+    },
+    {
+      id: '3',
+      name: 'Aenean Ru Bristique 3',
+      active: false,
+      stars: 3,
+      image:
+        'https://images.pexels.com/photos/2631746/pexels-photo-2631746.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      oldPrice: 680,
+      price: 300,
+    },
+    {
+      id: '4',
+      name: 'Aenean Ru Bristique 4',
+      active: false,
+      stars: 4,
+      image:
+        'https://images.pexels.com/photos/2062431/pexels-photo-2062431.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      oldPrice: 500,
+      price: 450,
+    },
+    {
+      id: '5',
+      name: 'Aenean Ru Bristique 5',
+      active: false,
+      stars: 3,
+      image:
+        'https://images.pexels.com/photos/6969780/pexels-photo-6969780.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      oldPrice: 800,
+      price: 400,
+    },
+    {
+      id: '6',
+      name: 'Aenean Ru Bristique 6',
+      active: false,
+      stars: 4,
+      image:
+        'https://images.pexels.com/photos/7415755/pexels-photo-7415755.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+      oldPrice: 1000,
+      price: 560,
+    },
+  ],
 };
 
 export default initialState;
