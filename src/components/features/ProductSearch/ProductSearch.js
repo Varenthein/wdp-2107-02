@@ -12,9 +12,11 @@ const ProductSearch = () => (
       <FontAwesomeIcon className={styles.icon} icon={faListUl} />
       <ul className={styles.text}>
         Select a category
-        {initialState.categories.map(item => (
-          <li key={item.id}>{item.name}</li>
-        ))}
+        <ul className={styles.secondMenu}>
+          {initialState.categories.map(item => (
+            <li key={item.id}>{item.name}</li>
+          ))}
+        </ul>
       </ul>
       <FontAwesomeIcon className={styles.icon} icon={faCaretDown} />
     </div>
