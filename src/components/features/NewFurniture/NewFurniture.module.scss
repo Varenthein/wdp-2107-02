@@ -11,6 +11,7 @@
 
     .heading {
       position: relative;
+      width: 95%;
 
       h3 {
         color: $newfurniture-header-text;
@@ -33,6 +34,8 @@
 
     .menu {
       text-align: center;
+      top: 3px;
+
       ul {
         margin: 0;
         padding: 0;
@@ -100,6 +103,10 @@
     }
   }
 
+  .row{
+    padding-top: 30px;
+  }
+
   .fadeout {
     opacity: 0;
     transition: 0.6s;
@@ -107,5 +114,19 @@
 
   .fadein {
     transition: 1.5s;
+  }
+}
+
+@media (max-width: 767px) {
+  :global(.row) > * {
+    font-size: 16px;
+  }
+
+  .dots {
+    a {
+      width: 9px;
+      height: 8px;
+      border-radius: 4px;
+    }
   }
 }
