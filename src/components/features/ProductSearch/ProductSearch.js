@@ -11,7 +11,7 @@ const ProductSearch = () => (
     <div className={styles.category}>
       <FontAwesomeIcon className={styles.icon} icon={faListUl} />
       <ul className={styles.text}>
-        Select a category
+        <p className={styles.selectCategory}>Select a category</p>
         <ul className={styles.secondMenu}>
           {initialState.categories.map(item => (
             <li key={item.id}>{item.name}</li>

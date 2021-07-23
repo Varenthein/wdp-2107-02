@@ -5,6 +5,7 @@
   display: inline-flex;
   height: 45px;
   color: $productsearch-text;
+}
 
   .category {
     border-right: 1px solid $productsearch-category-border;
@@ -26,6 +27,10 @@
       width: 100%;
       background-color: $productsearch-select-bcg;
       padding: 0;
+
+      .selectCategory {
+        margin: 0;
+      }
 
       .secondMenu {
         width: 100%;
@@ -101,20 +106,39 @@
       outline: none;
     }
   }
-}
+
+
 @media (max-width: 767px) {
   .searchField {
     input {
       width: 80%;
-      font-size: 10px;
+      font-size: 13px;
     }
   }
   .category {
     .text{
-    font-size: 10px;
+    font-size: 13px;
   }
     select {
       width: 80%;
     }
   }
 }
+
+@media (max-width: 576px) {
+  .selectCategory {
+    padding: 0 30px;
+  }
+
+  .searchField {
+    input {
+      width: 100%;
+    }
+    .icon {
+      font-size: 12px;
+    }
+  }
+}
+
+
+
