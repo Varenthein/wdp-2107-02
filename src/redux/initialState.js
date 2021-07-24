@@ -592,6 +592,32 @@ const initialState = {
       price: 560,
     },
   ],
+  menu: [
+    {
+      id: 'furniture',
+      name: 'Furniture',
+    },
+    {
+      id: 'chair',
+      name: 'Chair',
+    },
+    {
+      id: 'table',
+      name: 'Table',
+    },
+    {
+      id: 'sofa',
+      name: 'TSofa',
+    },
+    {
+      id: 'bedroom',
+      name: 'Bedroom',
+    },
+    {
+      id: 'blog',
+      name: 'Blog',
+    },
+  ],
 };
 
 export default initialState;

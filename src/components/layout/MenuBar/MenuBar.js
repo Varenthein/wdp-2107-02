@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import initialState from './../../../redux/initialState';
 import ProductSearch from '../../features/ProductSearch/ProductSearch';
 
 import styles from './MenuBar.module.scss';
@@ -26,24 +26,9 @@ const MenuBar = ({ children }) => (
                 Home
               </a>
             </li>
-            <li>
-              <a href='/shop/furniture'>Furniture</a>
-            </li>
-            <li>
-              <a href='/shop/chair'>Chair</a>
-            </li>
-            <li>
-              <a href='/shop/table'>Table</a>
-            </li>
-            <li>
-              <a href='/shop/sofa'>Sofa</a>
-            </li>
-            <li>
-              <a href='/shop/bedroom'>Bedroom</a>
-            </li>
-            <li>
-              <a href='/shop/blog'>Blog</a>
-            </li>
+            {initialState.menu.map(item => (
+              <li><a href={'/shop/' + item.id}>{item.name}</a></li>
+            ))}
           </ul>
         </div>
       </div>
