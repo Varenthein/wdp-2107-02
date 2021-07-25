@@ -7,7 +7,6 @@
 
   .photo {
     position: relative;
-    padding: 0 10px 0 10px;
     background: {
       size: contain;
       position: center;
@@ -15,7 +14,7 @@
     }
     overflow: hidden;
     align-items: flex-end;
-  
+
 
     .promoCounter {
       height: 0;

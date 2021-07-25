@@ -1,4 +1,5 @@
 const initialState = {
+  device: '',
   brands: [
     {
       id: 1,

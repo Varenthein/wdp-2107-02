@@ -13,7 +13,7 @@ const ShopNowProducts = ({ hotDeals, title, subTitle, spanTitle, images, button 
           <div className='col-4'>
             <HotDealsProducts {...hotDeals} />
           </div>
-          <div className='col-8'>
+          <div className='col-lg-8 col-md-12 col-sm-12 col-xs-12'>
             <Carousel
               images={images}
               title={title}
