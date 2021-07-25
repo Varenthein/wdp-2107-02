@@ -1,0 +1,57 @@
+@import '../../../styles/settings.scss';
+
+.root {
+  padding: 48px 0 68px;
+  background: $login-bcg;
+
+  .title {
+    text-align: center;
+    color: $login-title;
+    padding: 12px;
+    margin-bottom: 20px;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    background: $login-wrapper-bcg;
+    padding: 48px 72px;
+    max-width: 500px;
+    margin: auto;
+    border-top: 8px solid $login-wrapper-border;
+    border-bottom: 8px solid $login-wrapper-border;
+    border-radius: 10px;
+    box-shadow: 10px 10px 50px;
+
+    label {
+      font-weight: bolder;
+    }
+
+    input[type='email'], input[type='password'] {
+      margin-bottom: 24px;
+      padding: 6px;
+      outline: none;
+      cursor: pointer;
+      border: 2px solid $login-input-border;
+      border-radius: 5px;
+      box-shadow: 0 0 5px;
+      font-size: 12px;
+    }
+
+    p {
+      margin-bottom: 24px
+    }
+
+    .button {
+      margin: auto;
+      padding: 12px 48px;
+      background: linear-gradient(lighten($login-button-bcg, 40%), $login-button-bcg);
+      color: $login-button-color;
+      font-weight: bolder;
+      border-radius: 5px;
+      box-shadow: 0 0 10px $login-button-shadow;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+}
