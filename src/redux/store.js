@@ -9,6 +9,7 @@ import brandsReducer from './brandsRedux';
 import commentsReducer from './commentsRedux';
 import compareProductsReducer from './compareRedux';
 import deviceReducer from './deviceRedux';
+import favouritesReducer from './favouritesRedux';
 
 // define reducers
 const reducers = {
@@ -20,6 +21,7 @@ const reducers = {
   comments: commentsReducer,
   compare: compareProductsReducer,
   device: deviceReducer,
+  favourites: favouritesReducer,
 };
 
 // add blank reducers for initial state properties without reducers

@@ -28,7 +28,7 @@ export default function reducer(statePart = [], action = {}) {
         ...statePart,
         products: statePart.products.filter(prod => prod.id !== action.payload),
       };
-    case SET_COMPARE_STATE:  
+    case SET_COMPARE_STATE:
       return {
         ...statePart,
         compare: [...statePart.compare, action.payload],
