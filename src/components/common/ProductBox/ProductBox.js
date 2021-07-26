@@ -8,10 +8,31 @@ import { faHeart } from '@fortawesome/free-regular-svg-icons';
 import Button from '../Button/Button';
 import StarRating from '../StarRating/StarRating';
 
-const ProductBox = ({ id, name, price, promo, stars, favorite, changeFavorite, oldPrice, image, myRating, addRating, toFavorite, toCompare, compareCount, setCompare  }) => {
-  const handleFavorite = event => {
+const ProductBox = ({
+  id,
+  name,
+  price,
+  promo,
+  stars,
+  isFavourite,
+  addFavourite,
+  removeFavourite,
+  oldPrice,
+  image,
+  myRating,
+  addRating,
+  toFavorite,
+  toCompare,
+  compareCount,
+  setCompare,
+}) => {
+  const handleFavourite = event => {
     event.preventDefault();
-    changeFavorite(id);
+    if (isFavourite) {
+      removeFavourite(id);
+    } else {
+      addFavourite(id);
+    }
   };
   const toCompareHandler = event => {
     event.preventDefault();
@@ -46,10 +67,12 @@ const ProductBox = ({ id, name, price, promo, stars, favorite, changeFavorite, o
         <div className={styles.outlines}>
           <Button
             variant='outline'
-            className={favorite ? 'active' : ''}
-            onClick={e => handleFavorite(e, id)}
+            className={isFavourite ? styles.favourite : ''}
+            onClick={handleFavourite}
           >
-            <FontAwesomeIcon icon={faHeart} toFavorite={toFavorite}>Favorite</FontAwesomeIcon>
+            <FontAwesomeIcon icon={faHeart} toFavorite={toFavorite}>
+              Favorite
+            </FontAwesomeIcon>
           </Button>
           <Button variant='outline' onClick={toCompareHandler}>
             <FontAwesomeIcon icon={faExchangeAlt} toCompare={toCompare}>
@@ -75,8 +98,6 @@ ProductBox.propTypes = {
   promo: PropTypes.string,
   stars: PropTypes.number,
   id: PropTypes.string,
-  favorite: PropTypes.bool,
-  changeFavorite: PropTypes.func,
   oldPrice: PropTypes.number,
   image: PropTypes.string,
   myRating: PropTypes.any,
@@ -85,6 +106,10 @@ ProductBox.propTypes = {
   toFavorite: PropTypes.bool,
   setCompare: PropTypes.func.isRequired,
   compareCount: PropTypes.number.isRequired,
+  isFavourite: PropTypes.bool,
+  addFavourite: PropTypes.func,
+  removeFavourite: PropTypes.func,
+  handleFavourite: PropTypes.func,
 };
 
 export default ProductBox;

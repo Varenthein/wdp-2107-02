@@ -4,7 +4,7 @@
   background-color: $productbox-bcg;
   border: 1px solid $productbox-bcg-border;
   margin-bottom: 2rem;
-  
+
   .photo {
     position: relative;
     padding: 80% 10px 0 10px;
@@ -49,7 +49,7 @@
   .content {
     text-align: center;
     padding: 20px;
-    
+
     h5 {
       color: $productbox-content-text;
       font-size: 16px;
@@ -110,7 +110,10 @@
 
     .price :first-child{
       background-color: $productbox-price-hover-bcg;
-     } 
+     }
   }
 }
+  .favourite {
+    background-color: $btn-main-bcg-hover;
+  }
 }
