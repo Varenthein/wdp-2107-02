@@ -1,8 +1,13 @@
 /* selectors */
-export const getGallery = ({ gallery }) => gallery;
+export const getFeatured = ({ products }) =>
+  products.filter(item => item.featured === true);
 
-export const getActiveItem = ({ gallery }) =>
-  gallery.filter(item => item.active === true);
+export const getTopSeller = ({ products }) =>
+  products.filter(item => item.topSeller === true);
+
+export const getSaleOff = ({ products }) => products.filter(item => item.oldPrice);
+
+export const getTopRated = ({ products }) => products.filter(item => item.stars >= 3);
 
 /* reducer */
 export default function reducer(statePart = [], action = {}) {
