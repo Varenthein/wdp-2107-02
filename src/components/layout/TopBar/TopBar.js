@@ -37,7 +37,7 @@ const TopBar = () => (
               </a>
             </li>
             <li>
-              <a href='#'>
+              <a href='/register'>
                 <FontAwesomeIcon className={styles.icon} icon={faLock} /> Register
               </a>
             </li>
