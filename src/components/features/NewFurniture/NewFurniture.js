@@ -77,6 +77,11 @@ class NewFurniture extends React.Component {
                 <div className={'col-auto ' + styles.heading}>
                   <h3> New furniture </h3>
                 </div>
+                <div className={'col-auto ' + styles.dots}>
+                  <ul> {dots} </ul>
+                </div>
+              </div>
+              <div className='row no-gutters align-items-end'>
                 <div className={'col ' + styles.menu}>
                   <ul>
                     {categories.map(item => (
@@ -89,17 +94,13 @@ class NewFurniture extends React.Component {
                         </a>
                       </li>
                     ))}
-                    ;
                   </ul>
-                </div>
-                <div className={'col-auto ' + styles.dots}>
-                  <ul> {dots} </ul>
                 </div>
               </div>
             </div>
             <div
               className={
-                'row' + (isFading ? ' ' + styles.fadeout : ' ' + styles.fadein)
+                'row' +' ' + styles.row + (isFading ? ' ' + styles.fadeout : ' ' + styles.fadein)
               }
             >
               {categoryProducts
